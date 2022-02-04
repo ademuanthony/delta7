@@ -67,3 +67,22 @@ padding: 5px 30px !important;
 .success-modal {
     height: 400px;
 }
+
+@media (max-width: 460px) {
+    .character-inner-modal .image-box img {
+        height: 300px;
+    }
+
+    .bidders {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bid-person .bid-image {
+        width: 20%;
+    }
+
+    .bid-person .bidder-info {
+        width: 78%;
+    }
+}

@@ -75,5 +75,19 @@ font-size: 18px !important;
     .nft-minting-section .page-heading h3 {
         font-size: 30px;
     }
+
+    .nft-minting-section {
+        padding-top: 50%;
+    }
+
+    .arrow-bottom {
+        width: 47%;
+    }
+}
+
+@media (max-width: 769px) {
+    .nft-minting-section .page-heading {
+        width: 80%;
+    }
 }
 

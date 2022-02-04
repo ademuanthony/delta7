@@ -81,7 +81,7 @@ const Minting = ({ countdownTimestampMs }) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="mt-5">
+                                    <div className="my-5">
                                         <Link to="/nft-minting" className='btn btn-warning'>Go bidding</Link>
                                     </div>
                                 </div>
