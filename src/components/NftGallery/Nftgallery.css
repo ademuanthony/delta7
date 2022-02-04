@@ -1,0 +1,5 @@
+.nft-card .nft-image img {
+    height: 236px;
+    width: 260px;
+    object-fit: fill;
+}

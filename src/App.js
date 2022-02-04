@@ -6,13 +6,15 @@ import { Route, Routes } from "react-router";
 import Home from "./screens/index"
 import ComingSoon from "./screens/ComingSoon/ComingSoon";
 import Minting from "./screens/Minting/Minting";
+import NftMinting from "./screens/NftMinting/NftMinting";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/nft-market" element={<ComingSoon/>}/>
-      <Route path="/minting" element={<Minting countdownTimestampMs={1644186600000}/>}/>
+      <Route path="/minting" element={<Minting countdownTimestampMs={1644015600000}/>}/>
+      <Route path="/nft-minting" element={<NftMinting/>}/>
     </Routes>
   );
 }

@@ -1,0 +1,79 @@
+.nft-minting-section {
+    min-height: 100vh;
+    background: url(../../images/nft-items/coming-soon/nft-bg.png), #210036;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    margin-top: 90px;
+}
+
+.nft-minting-section .page-heading {
+    text-align: center;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nft-minting-section .page-heading h3 {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.nft-bidding-info {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.nft-bidding-info .current-bid {
+    width: 55%;
+    border-right: 1px solid ;
+}
+
+.nft-card {
+    color: #fff;
+    background: #27073B;
+    border-radius: 8px;
+    padding: 30px 20px;
+}
+
+.nft-bidding-info .current-bid .auction-img, .nft-bidding-info .total-bid .bid-img {
+    width: 20%;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.nft-bidding-info .current-bid .auction-text, .nft-bidding-info .total-bid .bid-text {
+    width: 75%;
+}
+
+.nft-bidding-info .total-bid {
+    width: 45%;
+}
+
+.bid-btn {
+    font-weight: bold !important;
+font-size: 18px !important;
+}
+
+
+.arrow-bottom {
+    position: absolute;
+    top: 84px;
+}
+
+@media (max-width: 426px) {
+    .arrow-bottom {
+        top: 80px;
+        right: 10px;
+    }
+
+    .nft-minting-section .page-heading{
+        width: 100%;
+    }
+
+    .nft-minting-section .page-heading h3 {
+        font-size: 30px;
+    }
+}
+
