@@ -85,4 +85,9 @@ padding: 5px 30px !important;
     .bid-person .bidder-info {
         width: 78%;
     }
+
+    .bid-btn {
+        padding: 5px 7px !important;
+        font-size: 15px !important;
+    }
 }

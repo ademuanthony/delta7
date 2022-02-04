@@ -20,7 +20,7 @@ const CharacterModal = ({ show, handleClose, character }) => {
     <div className="d-flex justify-content-end mb-2">
         <img src={cancel} alt="" className='img-fluid' role="button" onClick={() => handleClose()} />
     </div>
-    <div className="px-3 character-inner-modal">
+    <div className="px-md-3 px-1 character-inner-modal">
         <div className="image-box">
             <img src={character.image} alt="" className='img-fluid' />
         </div>
