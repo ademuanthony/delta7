@@ -3,7 +3,7 @@ import './minting.css'
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header';
 import { getRemainingTimeUntilMsTimestamp } from './countdownTmerUtils'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 const defaultRemainingTime = {
     seconds: '00',
     minutes: '00',
@@ -81,9 +81,9 @@ const Minting = ({ countdownTimestampMs }) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="my-5">
+                                    {/* <div className="my-5">
                                         <Link to="/nft-minting" className='btn btn-warning'>Go bidding</Link>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                             </div>
