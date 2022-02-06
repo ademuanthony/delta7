@@ -12,7 +12,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/nft-market" element={<ComingSoon/>}/>
-      <Route path="/minting" element={<Minting countdownTimestampMs={1644098400000}/>}/>
+      <Route path="/minting" element={<Minting countdownTimestampMs={1644186600000}/>}/>
     </Routes>
   );
 }
