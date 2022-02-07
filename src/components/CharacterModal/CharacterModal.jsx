@@ -17,6 +17,7 @@ const CharacterModal = ({ show, handleClose, character }) => {
     const [dfcEnabled, setDfcEnabled] = useState(false)
     const [topBid, setTopBid] = useState(0)
     const [topBidder, setTopBidder] = useState('')
+    const [round, setRound] = useState(0)
 
     const closeThisModal = () => {
         handleClose()
@@ -46,8 +47,10 @@ const CharacterModal = ({ show, handleClose, character }) => {
             const contract = new Contract(delta7ContractAddress, delta7Abi, library.getSigner())
             const dfcContract = new Contract(dfcContractAddress, dfcAbi, library.getSigner())
 
-            const round = await contract.round()
-            const bidResult = await contract.auctionWinner((parseInt(round)-1)*10 + character.id-1, parseInt(round))
+            const roundResult = await contract.round()
+            setRound(parseInt(roundResult))
+            if (round <= 0) return
+            const bidResult = await contract.auctionWinner((round-1)*10 + character.id-1, round)
             setTopBid(parseInt(bidResult.amount)/1e8)
             setTopBidder(bidResult.account)
             setAmount(1000000000 + topBid)
@@ -74,9 +77,9 @@ const CharacterModal = ({ show, handleClose, character }) => {
                 await dfcContract.approve(delta7ContractAddress, BigNumber.from(1e14).mul(1e8))
                 return
             }
-            await contract.placeBid(20 + character.id-1, BigNumber.from(amount).mul(1e8))
-            alert('Bid Placed')
+            await contract.placeBid((round-1)*10 + character.id, BigNumber.from(amount).mul(1e8))
             handleClose()
+            openSuccesModal()
         } catch (error) {
             if(error.data)
                 alert(error.data.message)

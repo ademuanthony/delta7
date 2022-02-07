@@ -68,7 +68,7 @@ const NftItems = () => {
                 onSwiper={(swiper) => {}}
             >
                 {characters.map((character) => (
-                    <SwiperSlide>
+                    <SwiperSlide key={character.id}>
                         <div className="nft-item-box" onClick={(e) => displayCharacter(e, character)}>
                             <img src={character.image} alt={character.name} className="img-fluid" />
                         </div>

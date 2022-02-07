@@ -10,7 +10,7 @@ import {
   
 import { Modal } from 'react-bootstrap';
 import cancel from '../../images/minting/cancel.png'
-import { injected, walletconnect } from '../../web3/Connector';
+import { injected } from '../../web3/Connector';
 
 const LoginModal = ({ show, handleClose }) => {
 
