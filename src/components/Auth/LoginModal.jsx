@@ -54,11 +54,11 @@ const LoginModal = ({ show, handleClose }) => {
                 <div className="px-md-3 px-1 character-inner-modal">
                     <h3>Select Wallet Provider</h3>
                     <p>
-                        <button className='btn btn-outline-primary' onClick={() => connect(injected)}>Metamask</button>
+                        <button className='btn btn-outline-primary' onClick={() => connect(injected)}>Metamask/Trustwallet</button>
                     </p>
-                    <p>
+                    {/* <p>
                     <button className='btn btn-outline-primary' onClick={() => connect(walletconnect)}>WalletConnect</button>
-                    </p>
+                    </p> */}
                 </div>
             </Modal.Body>
 
