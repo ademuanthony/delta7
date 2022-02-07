@@ -58,8 +58,8 @@ const CharacterBox = ({ character, openCharacter }) => {
                 <img src={auction} alt="" className="img-fluid" />
               </div>
               <div className="bid-text">
-                <p className="mb-0">Total Bids</p>
-                <p className="mb-0">{bidCount}</p>
+                {/* <p className="mb-0">Total Bids</p>
+                <p className="mb-0">{bidCount}</p> */}
               </div>
             </div>
           </div>
