@@ -1,2 +1,2 @@
-export const delta7ContractAddress = '0xeA8d1A55cA179648F792e074A5D662F98119Ae76'
+export const delta7ContractAddress = '0xcbec1a76adf1ebd37a595b9c5b85eacba78df57d'
 export const dfcContractAddress = '0x996c1bf72ec220289ae0edd3a8d77080642121a2'
