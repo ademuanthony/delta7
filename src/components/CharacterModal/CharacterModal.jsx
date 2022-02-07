@@ -100,16 +100,6 @@ const CharacterModal = ({ show, handleClose, character }) => {
         </div>
         <div className="character-info mt-3">
             <h4>{character.name}</h4>
-            <div className="bid-input-section">
-                <div className="input-group mb-3">
-                    <input value={amount} onChange={e => {setAmount(e.target.value)}}
-                     type="text" className="form-control" placeholder="Enter your bid(DFC)" 
-                     aria-label="Recipient's username" aria-describedby="button-addon2" />
-                    <button className="btn bid-btn" type="button" id="button-addon2" onClick={placeBid}>
-                        {dfcEnabled? 'BID NOW': 'ENABLE DFC'}
-                    </button>
-                </div>
-            </div>
             <p>{character.description}</p>
         </div>
         <div className="top-bidders">
@@ -130,7 +120,16 @@ const CharacterModal = ({ show, handleClose, character }) => {
             </>
         ) : ('')}
             
-           
+            <div className="bid-input-section">
+                <div className="input-group mb-3">
+                    <input value={amount} onChange={e => {setAmount(e.target.value)}}
+                     type="text" className="form-control" placeholder="Enter your bid(DFC)" 
+                     aria-label="Recipient's username" aria-describedby="button-addon2" />
+                    <button className="btn bid-btn" type="button" id="button-addon2" onClick={placeBid}>
+                        {dfcEnabled? 'BID NOW': 'ENABLE DFC'}
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
