@@ -18,6 +18,17 @@
 .env.test.local
 .env.production.local
 
+smartcontract/.env
+smartcontract/node_modules
+smartcontract/.env
+smartcontract/coverage
+smartcontract/coverage.json
+smartcontract/typechain
+
+#Hardhat files
+smartcontract/cache
+smartcontract/artifacts
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
