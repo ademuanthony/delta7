@@ -7,14 +7,24 @@ import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Web3ReactProvider } from '@web3-react/core'
+import { Web3Provider } from '@ethersproject/providers'
 AOS.init();
 
+function getLibrary(provider) {
+  const library = new Web3Provider(provider);
+  library.pollingInterval = 8000;
+  return library;
+}
+
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-    <App />
-    </BrowserRouter>
-  </React.StrictMode>,
+  <Web3ReactProvider getLibrary={getLibrary}>
+     <React.StrictMode>
+      <BrowserRouter>
+      <App />
+      </BrowserRouter>
+    </React.StrictMode>
+  </Web3ReactProvider>,
   document.getElementById('root')
 );
 

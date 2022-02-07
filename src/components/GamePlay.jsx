@@ -26,8 +26,8 @@ const GamePlay = () => {
                         slidesPerView={1}
                         navigation
                         autoplay
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
+                        onSlideChange={() => {}}
+                        onSwiper={(swiper) => {}}
                         >
                         <SwiperSlide>
                             <div className="text-center">

@@ -1,5 +1,4 @@
 import React, {useState, useCallback} from 'react';
-import auction from '../../images/minting/auction.png'
 import CharacterModal from '../CharacterModal/CharacterModal';
 
 import './Nftgallery.css'
@@ -13,6 +12,7 @@ import './Nftgallery.css'
 // import 'swiper/modules/autoplay/autoplay.min.css'; // core Swiper
 
 import { firstCharacters } from './NftCharacter';
+import CharacterBox from './CharacterBox';
 
 
 const NftGallery = () => {
@@ -34,47 +34,7 @@ const NftGallery = () => {
             <div className="nft-gallery py-5">
                 <div className="row">
                     {firstCharacters.map((character) => (
-                        <div className="col-lg-3 col-md-6 col-12 mb-4" key={character.id}>
-                            <div className="nft-card">
-                                <div className="nft-image text-center">
-                                    <img src={character.image} alt="" className='img-fluid' />
-                                </div>
-                                <div className="nft-name mt-3">
-                                    <h5>{character.name} {showModal}</h5>
-                                </div>
-                                <div className="nft-bidding-info d-flex">
-                                    <div className="current-bid py-3">
-                                        <div className="d-flex align-items-center justify-content-between">
-                                            <div className='auction-img'>
-                                                <img src={auction} alt="" className='img-fluid' />
-                                            </div>
-                                            <div className='auction-text'>
-                                                <p className='mb-0'>Current Bid</p>
-                                                <p className='mb-0'>10000000 DFC</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="total-bid ps-2 py-3">
-                                        <div className="d-flex align-items-center justify-content-between">
-                                            <div className='bid-img'>
-                                                <img src={auction} alt="" className='img-fluid' />
-                                            </div>
-                                            <div className='bid-text'>
-                                                <p className='mb-0'>Total Bids</p>
-                                                <p className='mb-0'>600</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="text-center">
-                                    <button className='btn btn-warning mt-3 bid-btn' onClick={() => openCharacter(character)}>
-                                        BID NOW
-                                    </button>
-                                </div>
-                               
-                            </div>
-                        </div>
-
+                        <CharacterBox key={character.id} character={character} openCharacter={openCharacter}/>
                     ))}
 
                 </div>

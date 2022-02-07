@@ -64,8 +64,8 @@ const NftItems = () => {
                     }
 
                 }}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => {}}
+                onSwiper={(swiper) => {}}
             >
                 {characters.map((character) => (
                     <SwiperSlide>
