@@ -52,10 +52,13 @@ const CharacterModal = ({ show, handleClose, character }) => {
             if (round <= 0) return
             const bidResult = await contract.auctionWinner((round-1)*10 + character.id-1, round)
             setTopBid(parseInt(bidResult.amount)/1e8)
+            console.log('topBid', topBid)
             setTopBidder(bidResult.account)
             setAmount(1000000000 + topBid)
+            console.log(bidResult)
 
             const allowance = await dfcContract.allowance(account, delta7ContractAddress)
+            console.log(allowance)
             setDfcEnabled(parseInt(allowance)/1e8 > topBid)
         }
         fetchData();
