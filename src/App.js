@@ -5,7 +5,6 @@ import { Route, Routes } from "react-router";
 // import './App.css';
 import Home from "./screens/index"
 import ComingSoon from "./screens/ComingSoon/ComingSoon";
-import Minting from "./screens/Minting/Minting";
 import NftMinting from "./screens/NftMinting/NftMinting";
 
 function App() {

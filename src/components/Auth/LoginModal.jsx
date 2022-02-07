@@ -10,7 +10,7 @@ import {
   
 import { Modal } from 'react-bootstrap';
 import cancel from '../../images/minting/cancel.png'
-import { injected, walletconnect } from './Connector';
+import { injected, walletconnect } from '../../web3/Connector';
 
 const LoginModal = ({ show, handleClose }) => {
 
@@ -35,6 +35,7 @@ const LoginModal = ({ show, handleClose }) => {
     const connect = async (connector) => {
         try {
           await activate(connector)
+          localStorage.setItem('connected', '1')
           handleClose()
         } catch (ex) {
           console.log(ex)

@@ -60,7 +60,10 @@ const Header = () => {
                             </li>
                         ):(
                             <li>
-                                <button className="btn btn-outline-danger" onClick={deactivate}>Logout</button>
+                                <button className="btn btn-outline-danger" onClick={() =>{
+                                    deactivate()
+                                    localStorage.setItem('connected', '0')
+                                }}>Logout</button>
                             </li>
                         )}
                     </Nav>

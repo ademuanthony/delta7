@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Web3ReactProvider } from '@web3-react/core'
 import { Web3Provider } from '@ethersproject/providers'
+import MetamaskProvider from './web3/MetamaskProvider'
 AOS.init();
 
 function getLibrary(provider) {
@@ -19,11 +20,13 @@ function getLibrary(provider) {
 
 ReactDOM.render(
   <Web3ReactProvider getLibrary={getLibrary}>
-     <React.StrictMode>
-      <BrowserRouter>
-      <App />
-      </BrowserRouter>
-    </React.StrictMode>
+    <MetamaskProvider>
+      <React.StrictMode>
+        <BrowserRouter>
+        <App />
+        </BrowserRouter>
+      </React.StrictMode>
+    </MetamaskProvider>
   </Web3ReactProvider>,
   document.getElementById('root')
 );
