@@ -15,7 +15,7 @@ const Hero = () => {
                         <div className="welcome-section">
                             <h1 className="mb-3">THIS IS DELTA7</h1>
                             {/* <h5 className="mb-5">Play, explore and trade in a unique virtual world that offers monetization of gaming experience and limitless rewards.</h5> */}
-                            <h5>Behind you, in a tick/cold weather comes the ancient African mysterious masquerades, to and fro, day and night they move in the realm of your imagination.</h5>
+                            <h5>Behind you, in a thick/cold weather comes the ancient African mysterious masquerades, to and fro, day and night they move in the realm of your imagination.</h5>
                             <h5>For or against,  a winner must EMERGE.</h5>
                             <h5 className='mb-4'>Fight to Win!!!</h5>
                             <a href="https://deficonnect.tech/markets" className="btn main-btn me-3" target="_blank" rel="noreferrer">BUY DFC</a>

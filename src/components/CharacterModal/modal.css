@@ -1,0 +1,93 @@
+.character-modal .modal-content{
+    background: #210036;
+    border-radius: 16px;
+    color: #fff;
+}
+
+.character-modal .modal-header,.character-modal .modal-footer  {
+    display: none;
+}
+
+.bidders {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bid-person {
+    background: url(../../images/minting/bid-bg.png) no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    color: #000;
+    padding: 10px 0 10px 20px;
+    margin-bottom: 20px;
+}
+
+.bid-person .bid-image {
+    width: 14%;
+}
+
+.bid-person .bid-image img {
+    height: 55px;
+    object-fit: cover;
+}
+
+.bid-person .bidder-info {
+    width: 83%;
+}
+
+.bidder-person .bidder-info h5 {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.bidder-person .bidder-info p {
+    font-size: 12px;
+}
+
+.bid-btn {
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFBF18 69.27%);
+border-radius: 4px;
+font-weight: bold;
+font-size: 18px;
+padding: 5px 30px !important;
+}
+
+.bid-input-section {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.character-inner-modal .image-box img{
+    height: 370px;
+    width: 434px;
+    object-fit: fill;
+    border-radius: 8px;
+}
+
+.success-modal {
+    height: 400px;
+}
+
+@media (max-width: 460px) {
+    .character-inner-modal .image-box img {
+        height: 300px;
+    }
+
+    .bidders {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bid-person .bid-image {
+        width: 20%;
+    }
+
+    .bid-person .bidder-info {
+        width: 78%;
+    }
+
+    .bid-btn {
+        padding: 5px 7px !important;
+        font-size: 15px !important;
+    }
+}
