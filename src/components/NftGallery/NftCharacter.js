@@ -6,7 +6,7 @@ import dogan from '../../images/minting/dogan.png'
 import headBoy from '../../images/minting/headboy.png'
 import woody from '../../images/minting/woody.png'
 import dagar from '../../images/minting/dargar.png'
-import bullyd from '../../images/minting/medaline.png'
+import bullyd from '../../images/minting/bullyd.png'
 import blackVille from '../../images/minting/blackville.png'
 
 export const firstCharacters = [
