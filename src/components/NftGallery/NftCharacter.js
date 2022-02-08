@@ -14,13 +14,13 @@ export const firstCharacters = [
         "id" : 1,
         "name" : "Sheyok",
         "image" : sheyok,
-        "description": "Medaline is a member of the dragon squad. An escape from the south war. He has a high striking force by the use of his whip. ",
+        "description": "Sheyok is a very powerful white valiant he got his powers from his ancestors who gave him a staff of honor and equally stands as staff of defense."
     },
     {
         "id" : 2,
         "name" : "Medaline",
         "image" : medaline,
-        "description": "Sheyok is a very powerful white valiant he got his powers from his ancestors who gave him a staff of honor and equally stands as staff of defense.",
+        "description": "Medaline is a member of the dragon squad. An escape from the south war. He has a high striking force by the use of his whip. "
     },
     {
         "id" : 3,
