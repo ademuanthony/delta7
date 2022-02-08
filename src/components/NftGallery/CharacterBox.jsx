@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useWeb3React } from "@web3-react/core";
 import auction from "../../images/minting/auction.png";
 import SuccessModal from "../CharacterModal/SuccessModal";
+import LoginModal from "../Auth/LoginModal";
 import { Contract, BigNumber } from "ethers";
 import {
   delta7ContractAddress,
@@ -18,6 +19,7 @@ const CharacterBox = ({ character }) => {
   const [topBid, setTopBid] = useState(0);
   const [topBidder, setTopBidder] = useState("");
   const [round, setRound] = useState(0);
+  const [showModal, setShowModal] = useState(false);
 
   const closeSuccessModal = () => {
     setSuccess(false);
@@ -27,7 +29,11 @@ const CharacterBox = ({ character }) => {
     setSuccess(true);
   };
 
-  const { library, account } = useWeb3React();
+  const authenticate = () => {
+    setShowModal(true);
+  };
+
+  const { library, account, active } = useWeb3React();
 
   async function fetchData() {
     const contract = new Contract(
@@ -45,15 +51,12 @@ const CharacterBox = ({ character }) => {
     setRound(parseInt(roundResult));
     if (round <= 0) return;
 
-    const item = (round - 1) * 10 + character.id - 1
+    const item = (round - 1) * 10 + character.id - 1;
 
-    const bidResult = await contract.auctionWinner(
-      item,
-      round
-    );
+    const bidResult = await contract.auctionWinner(item, round);
     setTopBid(parseInt(bidResult.amount) / 1e8);
     setTopBidder(bidResult.account);
-    if(amount === 0) {
+    if (amount === 0) {
       setAmount(1000000000 + topBid);
     }
 
@@ -76,7 +79,11 @@ const CharacterBox = ({ character }) => {
   });
 
   const placeBid = async () => {
-    if (!library) return;
+    if (!active) {
+      authenticate();
+      return
+    }
+
     const contract = new Contract(
       delta7ContractAddress,
       delta7Abi,
@@ -101,10 +108,10 @@ const CharacterBox = ({ character }) => {
         );
         return;
       }
-      const item = (round - 1) * 10 + character.id - 1
+      const item = (round - 1) * 10 + character.id - 1;
       await contract.placeBid(item, BigNumber.from(amount).mul(1e8));
       openSuccesModal();
-      await fetchData()
+      await fetchData();
     } catch (error) {
       if (error.data) alert(error.data.message);
     }
@@ -173,13 +180,18 @@ const CharacterBox = ({ character }) => {
                 id="button-addon2"
                 onClick={placeBid}
               >
-                {dfcEnabled ? "BID NOW" : "ENABLE DFC"}
+                {!active
+                  ? "Connect Wallet"
+                  : dfcEnabled
+                  ? "BID NOW"
+                  : "ENABLE DFC"}
               </button>
             </div>
           </div>
         </div>
       </div>
       <SuccessModal show={success} closeModal={closeSuccessModal} />
+      <LoginModal show={showModal} handleClose={() => setShowModal(false)} />
     </div>
   );
 };
