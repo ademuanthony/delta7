@@ -62,6 +62,78 @@ font-size: 18px !important;
     top: 84px;
 }
 
+
+/*count down*/
+
+.nft-minting-section .counter-section {
+    text-align: center;
+    padding-top: 100px;
+    background: transparent;
+}
+
+.nft-minting-section .counter-section h5 {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nft-minting-section .counter-section p {
+    font-size: 14px;
+}
+
+.counter-section .red-circle {
+    background: url(../../images/nft-items/coming-soon/red-circle.png) no-repeat;
+    background-size: contain;
+    object-fit: contain;
+    height: 160px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-section .yellow-circle {
+    background: url(../../images/nft-items/coming-soon/yelow-circle.png) no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    height: 160px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-section .green-circle {
+    background: url(../../images/nft-items/coming-soon/green-circle.png) no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    height: 160px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-section .purple-circle {
+    background: url(../../images/nft-items/coming-soon/purple-circle.png) no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    height: 160px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+
+    .nft-minting-section .counter-section {
+        text-align: center;
+        padding-top: 40px;
+    }
+}
+
+
 @media (max-width: 426px) {
     .arrow-bottom {
         top: 80px;
