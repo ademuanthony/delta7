@@ -32,7 +32,7 @@ const Minting = ({ countdownTimestampMs }) => {
                         <div className="col-md-6">
                             <div className="text-section">
                                 <div>
-                                    <h1>MINTING STARTS ON <span className='text-warning'>SATURDAY</span></h1>
+                                    <h1>NEW AUCTION STARTS EVERY <span className='text-warning'>SATURDAY</span></h1>
                                     <div className="benefits mt-3">
                                         <ul>
                                             <li className='mb-2'>This is an auction to mint Delta7</li>
