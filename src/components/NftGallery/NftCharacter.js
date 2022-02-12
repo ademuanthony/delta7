@@ -1,74 +1,74 @@
-import medaline from '../../images/minting/medaline.png'
-import sheyok from '../../images/minting/sheyok.png'
-import jungleBell from '../../images/minting/jungle-bell.png'
-import guruh from '../../images/minting/guruh.png'
-import dogan from '../../images/minting/dogan.png'
-import headBoy from '../../images/minting/headboy.png'
-import woody from '../../images/minting/woody.png'
-import dagar from '../../images/minting/dargar.png'
-import bullyd from '../../images/minting/bullyd.png'
-import blackVille from '../../images/minting/blackville.png'
+import gluth from '../../images/minting/gluth.png'
+import moonWalker from '../../images/minting/moon-walker.png'
+import seadon from '../../images/minting/seadon.png'
+import swirly from '../../images/minting/swirly.png'
+import flyingZebra from '../../images/minting/flying-zebra.png'
+import tucks from '../../images/minting/tucks.png'
+import blueOwl from '../../images/minting/blue-owl.png'
+import orangeOwl from '../../images/minting/orange-owl.png'
+import wirllee from '../../images/minting/wirllee.png'
+import bugie from '../../images/minting/bugie.png'
 
 export const firstCharacters = [
     {
         "id" : 1,
-        "name" : "Sheyok",
-        "image" : sheyok,
-        "description": "Sheyok is a very powerful white valiant he got his powers from his ancestors who gave him a staff of honor and equally stands as staff of defense."
+        "name" : "Moon Walker",
+        "image" : moonWalker,
+        "description": "The character has the ability to stay against the law of gravity. Very stylish and has a great fighting skill"
     },
     {
         "id" : 2,
-        "name" : "Medaline",
-        "image" : medaline,
-        "description": "Medaline is a member of the dragon squad. An escape from the south war. He has a high striking force by the use of his whip. "
+        "name" : "Gluth",
+        "image" : gluth,
+        "description": "Gluth is a very powerful white valiant he got his powers from his ancestors who gave him a staff of honor and equally stands as staff of defense."
     },
     {
         "id" : 3,
-        "name" : "Guruh",
-        "image" : guruh,
-        "description": "Guruh is a very fast character, his speed is unlimited as he covers a long distance in a very time. The fan in his hand is his magic wand.",
+        "name" : "Seadon",
+        "image" : seadon,
+        "description": "Seadon: she is the captain of the blue whale ship, after the ship was attacked and destroyed she became one of her kind surfing and sailing the ocean conquering islands.",
     },
     {
         "id" : 4,
-        "name" : "Dogan",
-        "image" : dogan,
-        "description": "Dogan is scary but nice aggressive but defensive. Dogan barks like a dog and uses that as a defensive tool against his opponents.",
+        "name" : "Swirly",
+        "image" : swirly,
+        "description": "Swirly: Skillful and very defensive. The short sword in his hand is made from strongest of iron element well shaped and very sharp. It could cost almost anything.",
     },
     {
         "id" : 5,
-        "name" : "Headboy",
-        "image" : headBoy,
-        "description": "Headboy's most powerful tool is his head. The head is so strong that he uses the head to break very hard objects. Lives on the jungle most times",
+        "name" : "Flying Zebra",
+        "image" : flyingZebra,
+        "description": "Flying Zebra: This character has the ability to fly and run fast too. The most tactical character amongst his own species",
     },
     {
         "id" : 6,
-        "name" : "Woody",
-        "image" : woody,
-        "description": "Woody is always in the woods. His attire is made up of fine wood. His strength is that he becomes invisible in the wood, so he uses it to conquer enemies.",
+        "name" : "Tucks",
+        "image" : tucks,
+        "description": "Tucks: A very unique character with a mask that helps him breathe very well under water and the horn on his face is also a strong weapon to fight",
     },
     {
         "id" : 7,
-        "name" : "Blackville",
-        "image" : blackVille,
-        "description": "Blackville is the craziest character in the jungle. He has speed and tactical in his display of strength. Short and smart from the western part of the green jungle.",
+        "name" : "Wirllee",
+        "image" : wirllee,
+        "description": "Wirllee: when he spins around the force generated from wind is as strong that it can literally lift anything off the ground",
     },
     {
         "id" : 8,
-        "name" : "Dagar",
-        "image" : dagar,
-        "description": "Dagar is a soft but dangerous fighter. The object in his hand is his most powerful weapon, strong enough cause great damage to his opponent.",
+        "name" : "Blue Owl",
+        "image" : blueOwl,
+        "description": "Blue Owl:  The blue owl is very powerful character. Looks really cool but possesses a unique power that radiant from he’s eyes.",
     },
     {
         "id" : 9,
-        "name" : "Bullyd",
-        "image" : bullyd,
-        "description": "Bullyd has a horn-like bull. he uses the bull horn as a weapon to fight and defend himself from his opponent.",
+        "name" : "Orange Owl",
+        "image" : orangeOwl,
+        "description": "Orange Owl: The vision of this character is so clear. Sharp and wild. He produces fire from his eyes. Walks with no weapon but very dangerous.",
     },
     {
         "id" : 10,
-        "name" : "Jungle bells",
-        "image" : jungleBell,
-        "description": "Jungle bells he uses his bell to announce his presence and also uses the bell to cause a distraction while he attacks his opponent.",
+        "name" : "Bugie",
+        "image" : bugie,
+        "description": "Bugie: A very clever character. Uses the staff on his hand to fight and defend himself. His hat is also a tool for defense",
     },
 
 ]
